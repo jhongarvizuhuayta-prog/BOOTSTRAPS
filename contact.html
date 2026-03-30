@@ -47,29 +47,46 @@
         <h1 class="sitename">Personal</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">Acerca de mi</a></li>
-          <li><a href="contact.html" class="active">Contacto</a></li>
-            <ul>
-              <li class="dropdown"><a href="#"><span>Bimestre 1</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="Assets/Actividades/Actividad1.html">Actividad 1</a></li>
-                  <li><a href="Assets/Actividades/Actividad2.html">Actividad 2</a></li>
-                  <li><a href="Assets/Actividades/Actividad3.html">Actividad 3</a></li>
-                  <li><a href="Assets/Actividades/Actividad4.html">Actividad 4</a></li>
-                  <li><a href="Assets/Actividades/Actividad5.html">Actividad 5</a></li>
-                  <li><a href="Assets/Actividades/Actividad6.html">Actividad 6</a></li>
-                  <li><a href="Assets/Actividades/Actividad7.html">Actividad 7</a></li>
-                  <li><a href="Assets/Actividades/Actividad8.html">Actividad 8</a></li>
-                  <li><a href="Assets/Actividades/Actividad9.html">Actividad 9</a></li>
-                  <li><a href="Assets/Actividades/Actividad10.html">Actividad 10</a></li>
-                </ul>
-              </li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark nav-transparente fixed-top">
+  <div class="container">
+    
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navPrincipal">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Acerca de mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacto</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropActividades" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Bimestre 1
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropActividades">
+            <li><a class="dropdown-item" href="Assets/Actividades/Actividad1.html">Actividad 1</a></li>
+            <li><a class="dropdown-item" href="Assets/Actividades/Actividad2.html">Actividad 2</a></li>
+             <li><a class="dropdown-item" href="Assets/Actividades/Actividad3.html">Actividad 3</a></li>
+              <li><a class="dropdown-item" href="Assets/Actividades/Actividad4.html">Actividad 4</a></li>
+               <li><a class="dropdown-item" href="Assets/Actividades/Actividad5.html">Actividad 5</a></li>
+                <li><a class="dropdown-item" href="Assets/Actividades/Actividad6.html">Actividad 6</a></li>
+                 <li><a class="dropdown-item" href="Assets/Actividades/Actividad7.html">Actividad 7</a></li>
+                  <li><a class="dropdown-item" href="Assets/Actividades/Actividad8.html">Actividad 8</a></li>
+                   <li><a class="dropdown-item" href="Assets/Actividades/Actividad9.html">Actividad 9</a></li>
+            <li><a class="dropdown-item" href="Assets/Actividades/Actividad10.html">Actividad 10</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     </div>
   </header>
