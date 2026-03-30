@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 9 - Acordeón Moderno</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header-black {
+            background-color: #212529;
+            color: white;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        /* Diseño Personalizado del Acordeón */
+        .accordion-item {
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px !important;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            background-color: #ffffff;
+            font-weight: 600;
+            color: #495057;
+            border-left: 5px solid #dee2e6;
+            transition: all 0.3s ease;
+        }
+
+        /* Color personalizado cuando está abierto */
+        .accordion-button:not(.collapsed) {
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            border-left: 5px solid #0d6efd;
+            box-shadow: none;
+        }
+
+        .accordion-body {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container mt-4 p-0 shadow bg-white" style="border-radius: 15px; overflow: hidden;">
+    <div class="header-black text-center">
+        <h1 class="display-4">Actividad 9</h1>
+        <p class="h3 fw-light">Acordeón (Accordion)</p>
+    </div>
+
+    <div class="p-4">
+        <div class="accordion accordion-flush" id="accordionExample">
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                        Accordion Item #1 - Información General
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Este es el cuerpo del primer elemento.</strong> Aquí puedes colocar descripciones detalladas. Al usar la clase <code>.accordion-flush</code>, eliminamos bordes innecesarios para un look más limpio.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Accordion Item #2 - Detalles Técnicos
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Contenido del segundo elemento. Nota cómo el borde izquierdo cambia de color cuando seleccionas una sección diferente, ayudando al usuario a saber dónde está ubicado.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Accordion Item #3 - Conclusión
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Placeholder content for this accordion. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but it demonstrates el flujo visual del diseño mejorado.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

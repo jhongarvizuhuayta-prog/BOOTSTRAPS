@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6 - Tarjetas Modernas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; } /* Fondo azul oscuro profundo */
+
+        .header-section {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 50px 20px;
+            border-bottom: 1px solid #334155;
+        }
+
+        /* Diseño de Tarjetas Renovado */
+        .custom-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-10px);
+            border-color: #38bdf8; /* Azul brillante al pasar el mouse */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(56, 189, 248, 0.2);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #38bdf8 0%, #1d4ed8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            color: #f8fafc;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section text-center">
+        <h1 class="display-4 fw-bold">Actividad 6</h1>
+        <p class="fs-4 fw-light text-info">Tarjetas (Cards) de Servicios</p>
+    </div>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="custom-card p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Desarrollo de Interfaces de Usuario</h3>
+                    <p class="card-text">
+                        Conversión de diseños (Figma, Adobe XD) en código funcional utilizando 
+                        las últimas tecnologías como <strong>HTML5, CSS3 y JavaScript moderno</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="custom-card p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="card-title">Diseño Responsivo</h3>
+                    <p class="card-text">
+                        Garantizar que la interfaz se adapte perfectamente a cualquier dispositivo. 
+                        Desde móviles pequeños hasta pantallas de escritorio 4K, usando <strong>Bootstrap 5</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="custom-card p-4">
+                    <div class="icon-box">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="card-title">Desarrollo con Frameworks</h3>
+                    <p class="card-text">
+                        Uso de tecnologías modernas como <strong>React, Vue.js o Svelte</strong> para crear 
+                        aplicaciones web rápidas, escalables y con una experiencia de usuario fluida.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
